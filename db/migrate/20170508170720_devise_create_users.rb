@@ -32,6 +32,14 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
 
 
       t.timestamps null: false
+
+      # Adding fields from user table
+      t.string :user_name
+      t.string :addres
+      t.string :phone
+      t.boolean :department_boss
+      t.integer :department_id
+
     end
 
     add_index :users, :email,                unique: true
