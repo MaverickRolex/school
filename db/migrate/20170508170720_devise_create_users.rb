@@ -35,7 +35,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
 
       # Adding fields from user table
       t.string :user_name
-      t.string :addres
+      t.string :address
       t.string :phone
       t.boolean :department_boss
       t.integer :department_id
