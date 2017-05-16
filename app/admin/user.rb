@@ -37,7 +37,7 @@ ActiveAdmin.register User, as: "Personal" do
   end
 
   show do
-    h3 user.user_name
+    h3 personal.user_name
     attributes_table do
       row :address
       row :phone
